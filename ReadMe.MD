@@ -22,7 +22,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-По умолчанию сервис будет доступен по адресу http://127.0.0.1:8000.
+По умолчанию сервис будет доступен по адресу http://127.0.0.1:8000
 
 ## Эндпоинты
 
@@ -106,6 +106,20 @@ curl -X POST -H "Content-Type: application/json" -d '[{"text": "Привет"}, 
     { "text": "Мир", "sentiment": [{ "label": "POSITIVE", "score": 0.9998 }] }
 ]
 ```
+
+## 5. Запуск сервиса визуальной работы на Streamlit
+
+Чтобы запустить сервис Streamlit для анализа тональности, выполните следующую команду в командной строке:
+
+```
+python streamlit_app.py
+```
+
+```
+streamlit run streamlit_app.py
+```
+По умолчанию сервис будет доступен по адресу Local URL: http://localhost:8501
+
 
 ## Заключение
 
